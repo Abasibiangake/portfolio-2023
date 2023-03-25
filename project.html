@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AJ Portfolio Project and Services Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="portfoliostyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');    /* Remove the navbar's default margin-bottom and rounded borders */ 
+      *, *::before, *::after {
+  box-sizing: border-box;
+}
+      .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: rgb(107, 36, 36); /*rgba(252, 177, 86, 0.726);*/
+      font-family: Poppins, sans-serif;
+    }
+    
+    /* Add a red background color and some padding to the footer */
+    /* footer {
+      background-color: rgb(107, 36, 36);
+      padding: 2px;
+      font-family: Poppins, sans-serif;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+              
+    } */
+
+    body {
+      background-color:  rgb(193, 108, 108);/*rgba(206, 145, 71, 0.726);rgba(252, 177, 86, 0.726);*/
+      padding: 2px;
+      font-family: Poppins, sans-serif;
+      font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+        /* text-align:justify; */
+        min-height:100vh;
+        margin: 0;
+    } 
+    
+    .full-height-grow{
+        display: flex;
+        flex-direction: column;
+        /* margin: left 100px; */
+    }
+
+    .section-divider{
+        border-color: rgb(107, 36, 36);
+        border-bottom: none;
+        width: 50%;
+        height: 50%;
+        margin-top: 7rem;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+
+    .service-wrapper{
+        padding: 0 1rem;
+        text-align: center;
+        align-content: center;
+    }
+
+    .project-wrapper{
+        padding: 0 1rem;
+        text-align: justify;
+        /* align-content: center; */
+    }
+    
+
+    .service-name{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 1.2;
+        text-align: center;
+        font-weight:bold;
+        letter-spacing: 0.1rem;
+
+    }
+
+    .service-section{
+        background-color:rgb(113, 54, 54);
+        padding: 1rem 2rem;
+        margin-bottom: 0.6rem;
+        margin-right: 2rem;
+        border-radius: 2rem;
+        width: 600px;
+        margin-top: 3rem;
+       
+    }
+
+    .service-image{
+        width: 30%;
+        
+    }
+
+    .services-stack{
+        margin-bottom: 0;
+        text-decoration:underline;
+        padding-top: 2rem;
+    }
+    .service-language{
+        line-height: normal;
+        font-weight:bold;
+        letter-spacing: 0.1rem;
+
+    }
+    .service-divider{
+        display:flex;
+        align-items: stretch;
+        flex-grow: 1;
+        margin-top: 0.5rem;
+    }
+
+    .project-dividerOne{
+        display:flex;
+        align-items: stretch;
+        flex-grow: 1;
+        margin-top: 3rem;
+        
+    }
+
+    .project-dividerTwo{
+        display:flex;
+        align-items: stretch;
+        flex-grow: 1;
+        margin-top: 3rem;
+        height: fit-content;        
+    }
+
+    .project-section{
+        background-color:rgb(113, 54, 54);
+        padding: 3rem 4rem;
+        margin-bottom: 0.6rem;
+        border-radius: 2rem;
+        width: 600px;
+        font-size: large;
+        
+    }
+
+    .project-dividerOne .img-wrapper{
+        flex-grow: 1;
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        padding: 0;
+        height: inherit;
+    }
+    .project-dividerTwo .img-wrapperTwo{
+        flex-grow: 1;
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        padding: 0;
+        margin-left: 4rem;
+        height: inherit;
+    }
+
+    .project-name{
+        font-weight:bolder;
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .main-footer{
+      margin-top: 6rem;
+      background-color: rgb(107, 36, 36);
+      font-weight: bold;
+      padding: 5px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .social-link{
+         width: 1em;
+      margin-right: 2rem;
+      margin-left: 2rem;
+      color: white;
+      font-size:smaller;
+    }
+    .social-link:hover{
+      color: black;
+    }
+    .fab{
+        width: 1em;
+      margin-right: .5rem; 
+           
+    }
+    .accent-text{
+        /* font-family:cursive; */
+        font-weight:bolder;
+        font-size: 2rem;
+        color: rgb(107, 36, 36);
+    }
+
+
+  </style>
+</head>
+<body class = "container full-height-grow">
+    
+    <nav class="navbar navbar-inverse">
+        
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images\logo-transparent-white.png" alt="Logo" style="width:40px; height: 40px;">
+            </a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+                                        
+                </button>
+                <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <!-- <ul class="nav navbar-nav">
+                
+            </ul> -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="about.html">About Me</a></li>
+                    <li class="active"><a href="#project-link">Projects</a></li>
+                    <li><a href="#service-link">Services</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <a id="service-link"></a>
+
+    <div class = "service-container">
+        <h3>Services</h3>
+        <div class="service-wrapper">
+            <section class="service-divider">
+                <div class="service-section">
+                    <h4 class="service-name">Programming</h4>
+                    <img class="service-image" src = "images/Programming.jpg" alt="programming">
+                    <p class="services-stack">Stacks</p>
+                    <p class="service-language">Python, C++, HTML5, C, MATLAB, C#, Java and Debugging</p>
+                </div>
+                <div class="service-section">
+                    <h4 class="service-name">Data Analytics</h4>
+                    <img class="service-image" src = "images/Data Analytics.jpg" alt="data Analytics">
+                    <p class="services-stack">Stacks</p>
+                    <p class="service-language">COMSOL Multiphysics, Machine learning, SQL, PL/SQL</p>
+                </div>
+            </section>
+            
+            <section class="service-divider">
+                <div class="service-section">
+                    <h4 class="service-name">Electrical Testing</h4>
+                    <img class="service-image" src = "images/Electrical_Testing.jpg" alt="Electrical testing">
+                    <p class="services-stack">Stacks</p>
+                    <p class="service-language">Circuit Analysis/Design, System design, Embedded system, PLC, Soldering</span>
+                </div>
+                <div class="service-section">
+                    <h4 class="service-name">Mechanical Design and Manufacture</h4>
+                    <img class="service-image" src = "images/Mechanical Design and Manufacture.jpg" alt="Mechanical">
+                    <p class="services-stack">Stacks</p>
+                    <p class="service-language">Solid mechanics, SolidWorks</p>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+
+    
+
+
+
+    <hr class="section-divider">
+    
+    
+
+    <div class = "project-container">
+        <a id="project-link"></a>
+        <h3>Projects</h3>
+        <div class="project-wrapper">
+            <section class="project-dividerOne">
+                <div class="img-wrapper">
+                    <img class="project-image" src = "images\RMS.jpg" alt="RMS image" style="width: 30pc; height: 20pc; border-radius: 1rem;">
+                    
+                </div>
+                <div class="project-section">
+                    <p class="project-name"> Robotic Management System<Span > (2022)</Span> </p>
+                <span class="content"> Designed a software that interacts with its robotic external component to perform several tasks assigned by the health care professional.
+                    Utilised the Agile Methodology Approach and the System Development Lifecycle to implement the System Requirement Specification and the System Design Architecture.
+                    </span>
+                </div>
+            </section>
+
+            <section class="project-dividerTwo">
+                
+                <div class="project-section">
+                    <p class="project-name"> Detection of Oxygen in a Microfluidic Device<Span > (2019-2020)</Span> </p>
+                    <span class="content"> Simulated and analysed a microfluidic device to ensure effective growth of three, 
+                    3D bovine embryo tissue in an in-vitro environment.
+                    Designed each component in the device using SolidWorks and analysed each component individually 
+                    in COMSOL Multiphysics software.
+                    Applied mathematics and fluid physics to analyse the oxygen diffusion, concentration as well as the oxygen 
+                    consumption rate of the 3D embryo tissues in the device. 
+                    Proposed the most suitable micro-sensor and its best position of attachment to the microfluidic device.
+                    </span>
+                </div>
+                <div class="img-wrapperTwo">
+                    <img class="project-image" src = "images\Microfluidic Device Image.png" alt="Microfluidic image" style="width: 30pc; height: 20pc; border-radius: 1rem;">
+                </div>
+            </section>
+
+            <section class="project-dividerOne">
+                <div class="img-wrapper">
+                    <img class="project-image" src = "images\TurtleBot_Image.png" alt="Turtlebot image" style="width: 30pc; height: 20pc; border-radius: 1rem;">
+                    
+                </div>
+                <div class="project-section">
+                    <p class="project-name"> Game Technology - Cluedo Game<Span > (2019)</Span> </p>
+                <span class="content"> Implemented a program on Linux work environment that controls a Turtlebot robot to find and identify a Cluedo character in an environment.
+                    Used Python programming language to execute the game and Rviz for robot localization and mapping environment in a simulated and real world.
+                    </span>
+                </div>
+            </section>
+
+            <section class="project-dividerTwo">
+                <div class="project-section">
+                    <p class="project-name"> Classy Colonoscopy<Span > (2019)</Span> </p>
+                    <span class="content"> Designed and built a planar robot arm with a magnet at the end effector with 2 rotary joints.
+                    Used Kinematics principles to get the coordinates of movement of the robot arm to enable it to 
+                    move accurately according to the shape of the colon as well as SolidWorks to design the robotic arm. 
+                    LabView application was used to programme and control the speed and functions of each part of the robotic arm. 
+                    </span>
+                </div>
+                <div class="img-wrapperTwo">
+                    <img class="project-image" src = "images\Classic Colonoscopy Image.jpg" style="width: 30pc; height: 20pc; border-radius: 1rem;">
+                    
+                </div>
+            </section>
+
+        </div>
+    </div>
+    
+    
+    
+<footer class="main-footer">
+    <div class = "container-fluid">
+        <nav class="footer-nav">
+            
+            <a href = "https://www.linkedin.com/in/abasibiangake-james-0889a7150/" class="social-link">
+                <i class="fab fa-linkedin"></i> Linkedin
+            </a>
+            <a href = "#" class="social-link">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href = "https://github.com/Abasibiangake" class="social-link">
+                <i class="fab fa-github"></i> Github
+            </a>
+        </nav>
+    </div>
+</footer>
+  
+</body>
+</html>
+  

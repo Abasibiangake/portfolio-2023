@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AJ Portfolio HomePage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="portfoliostyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: rgb(107, 36, 36); /*rgba(252, 177, 86, 0.726);*/
+      font-family: Poppins, sans-serif;
+    }
+
+    
+    /* Add a red background color and some padding to the footer */
+    /* footer {
+      background-color: rgb(107, 36, 36);
+      padding: 2px;
+      font-family: Poppins, sans-serif;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+              
+    } */
+
+    body {
+      background-color:  rgb(193, 108, 108);/*rgba(206, 145, 71, 0.726);rgba(252, 177, 86, 0.726);*/
+      padding: 2px;
+      font-family: Poppins, sans-serif;
+      font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        min-height: 100%;
+    } 
+    .btn{
+    color: white;
+    background-color: rgb(107, 36, 36);
+    padding: .95rem 1.7rem;
+    border-radius: .8rem;
+    text-decoration: none;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10rem;
+  }
+
+  .btn:hover{
+      background-color: rgb(197, 84, 84);
+      color: white;
+  }
+
+  .btn:focus{
+      color: black
+  }
+  .main-footer{
+      margin-top: 6rem;
+      background-color: rgb(107, 36, 36);
+      font-weight: bold;
+      padding: 5px;
+      align-items: center;
+  }
+/* 
+  .main-footer {
+      display: flex;
+      background-color: aqua;
+      justify-content:left;
+  } */
+     .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        flex-grow: 1;
+    } 
+    .social-link{
+         width: 1em;
+      margin-right: 2rem;
+      margin-left: 2rem;
+      color: white;
+      font-size:smaller;
+    }
+    .social-link:hover{
+      color: black;
+  }
+    .fab{
+        width: 1em;
+      margin-right: .5rem; 
+           
+    }
+    .accent-text{
+        /* font-family:cursive; */
+        font-weight:bolder;
+        font-size: 2rem;
+        color: rgb(107, 36, 36);
+    }
+
+
+  </style>
+</head>
+<body>
+    <!-- <a href="/" class="brand-logo">
+        <img src="images\Abasibiangake James.jpg">
+        <div class="brand-logo-name"></div>
+    </a> -->
+
+    <nav class="navbar navbar-inverse">
+        
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images\logo-transparent-white.png" alt="Logo" style="width:40px; height: 40px;">
+            </a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+                                        
+                </button>
+                <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <!-- <ul class="nav navbar-nav">
+                
+            </ul> -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    </div class="container">
+        <a class="brand-logo" href="#">
+            <img src="images\logo-transparent-white.png" class = "center">
+            
+        </a> 
+        
+        <p class="join-text">Hi There! Welcome to 
+        <span class="accent-text">AJ platform.</span></p>
+        </p>Mission: To bring to the world highly reliable and sustainable Software & Robotic solutions. 
+        </p>
+        <!-- <a href="#" class="btn btn-info" role="button" >Link Button</a> -->
+        
+        <a href = "about.html" class = "btn" role = "button">Dive In</a>
+    </div>     
+
+
+<footer class="main-footer">
+    <div class = "container-fluid">
+        <nav class="footer-nav">
+            
+            <a href = "https://www.linkedin.com/in/abasibiangake-james-0889a7150/" class="social-link">
+                <i class="fab fa-linkedin"></i> Linkedin
+            </a>
+            <a href = "#" class="social-link">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href = "https://github.com/Abasibiangake" class="social-link">
+                <i class="fab fa-github"></i> Github
+            </a>
+        </nav>
+    </div>
+</footer>
+  
+</body>
+</html>
+  
